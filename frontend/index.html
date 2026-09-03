@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>😡 Chatbot Brigada</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="energia"></div>
+
+<main class="app">
+
+<header class="header">
+<div class="status">🔴 Assistente em alta energia</div>
+<h1>😡🔥 Brigada de Incêndio</h1>
+<p>Prevenção, emergência e segurança empresarial</p>
+</header>
+
+<section id="chat" class="chat">
+<div class="message bot">
+🔥 Olá! Sou seu assistente de segurança.<br><br>
+Envie sua dúvida sobre brigada de incêndio.
+</div>
+</section>
+
+<div class="quick">
+<button onclick="perguntaRapida('Quais são os tipos de extintores?')">🧯 Extintores</button>
+<button onclick="perguntaRapida('Explique as classes de incêndio')">🔥 Classes</button>
+<button onclick="perguntaRapida('Como funciona uma evacuação?')">🚨 Evacuação</button>
+</div>
+
+<section class="input-area">
+<textarea id="mensagem" placeholder="Digite sua pergunta..." rows="2"></textarea>
+
+<div class="actions">
+<button id="btnEnviar">🔥 Enviar</button>
+<button id="btnLimpar" class="secondary">Limpar</button>
+</div>
+
+<div>Mensagens: <span id="contador">0</span></div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

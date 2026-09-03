@@ -1,0 +1,122 @@
+*{
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+margin:0;
+height:100vh;
+overflow:hidden;
+background:#160000;
+color:white;
+}
+
+.energia{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,#ffd00055,transparent 20%),
+radial-gradient(circle at 80% 40%,#ff330055,transparent 25%),
+linear-gradient(135deg,#300000,#050000);
+animation:pulsar 3s infinite alternate;
+z-index:-1;
+}
+
+@keyframes pulsar{
+from{filter:brightness(1)}
+to{filter:brightness(1.4)}
+}
+
+.app{
+height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+.header{
+padding:25px;
+background:linear-gradient(90deg,#8b0000,#ff1a1a,#ff8c00);
+box-shadow:0 0 30px #ff3300;
+}
+
+.header h1{
+margin:10px 0;
+}
+
+.chat{
+flex:1;
+overflow:auto;
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.message{
+max-width:75%;
+padding:16px;
+border-radius:20px;
+animation:entrada .3s;
+}
+
+@keyframes entrada{
+from{transform:scale(.8);opacity:0}
+to{transform:scale(1);opacity:1}
+}
+
+.bot{
+background:#330808;
+border-left:5px solid #ffd000;
+box-shadow:0 0 15px #ff330044;
+}
+
+.user{
+margin-left:auto;
+background:linear-gradient(135deg,#ff0000,#ff8c00);
+box-shadow:0 0 15px #ff6600;
+}
+
+.quick{
+padding:10px 25px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+button{
+border:0;
+padding:12px 20px;
+border-radius:20px;
+background:linear-gradient(135deg,#ff1a1a,#ff8c00);
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px #ffd000;
+}
+
+.secondary{
+background:#555;
+}
+
+.input-area{
+padding:20px;
+background:#0008;
+}
+
+textarea{
+width:100%;
+border-radius:15px;
+padding:15px;
+font-size:16px;
+}
+
+.actions{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
