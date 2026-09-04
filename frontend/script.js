@@ -4,7 +4,7 @@ const btnEnviar = document.getElementById("btnEnviar");
 const btnLimpar = document.getElementById("btnLimpar");
 const contador = document.getElementById("contador");
 
-const API_URL = "http://127.0.0.1:5000/chat";
+const API_URL = "https://chatbot-brigada-5oad.onrender.com/chat";
 
 let total = 0;
 
