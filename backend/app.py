@@ -77,6 +77,8 @@ def chat():
         }), 500
 
 
+
+
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     print(f"Servidor iniciado com sucesso, porta: {port}. Para testar use: http://localhost:{port}")
